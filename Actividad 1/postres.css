@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+.container {
+    background-color: rgba(164, 128, 172, 0.123);    
+}
+header .menu{
+    display: flex;
+    margin: 0px;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(150, 41, 41);
+    font-size: 2em;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover {
+    color: rgb(128, 60, 60);
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    font-size: 3em;
+    color: white;
+    background-image: linear-gradient(
+        0deg,rgba(0,0,0,0.5), rgba(0,0,0,0.5)
+    ), url("portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1 {
+    color: whitesmoke;
+    /*añadir contorno al texto*/
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgba(233, 55, 55, 0.562);
+}
+#apple .container{
+    display: flex;
+    color: rgb(22, 79, 129);
+    padding: 30px;
+    gap: 10%;
+}
+
+#apple .posmanzana{
+    display: flex;
+    font-size: 5em;
+    color: #8b1304;
+    justify-content: center;
+    align-items: center;
+}
+#apple .fondo-a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width:  80vh;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        0deg,rgba(0,0,0,0), rgba(0,0,0,0)
+    ), url("manzana.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#chocolate .poschoco{
+    display: flex;
+    font-size: 5em;
+    color: #291b1b;
+    justify-content: center;
+    align-items: center;
+}
+#chocolate .fondo-c{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width:  80vh;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        0deg,rgba(0,0,0,0), rgba(0,0,0,0)
+    ), url("chocolate.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#strawberry .posfresa{
+    display: flex;
+    font-size: 5em;
+    color: #291b1b;
+    justify-content: center;
+    align-items: center;
+}
+#strawberry .fondo-s{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width:  80vh;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        0deg,rgba(0,0,0,0), rgba(0,0,0,0)
+    ), url("fresas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(230,230,230);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}   
+
+@media (min-width:950px) {
+    header .menu{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+    font-family: "Russo One", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+svg text {
+    animation: stroke 5s infinite reverse;
+    stroke-width: 1;
+    stroke: #9b3224;
+    font-size: 100px;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(214, 47, 47, 0.979);
+        stroke: rgb(160, 79, 54);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+    70% {
+        fill: rgba(231, 3, 3, 0.534);
+        stroke: rgb(160, 54, 54);
+    }
+    80% {
+        fill: rgba(204, 28, 28, 0.87);
+        stroke: rgb(160, 54, 54);
+        stroke-width: 3;
+    }
+    100% {
+        fill: rgb(204, 114, 72);
+        stroke: rgb(160, 54, 54);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+.recipe {
+    background-color: #965710;
+}
